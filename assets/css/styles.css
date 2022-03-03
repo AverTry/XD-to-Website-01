@@ -254,6 +254,7 @@ header p {
 	transform: translateX(-70px);
 	opacity: 0;
 	transition: all 300ms;
+  	pointer-events: none;
 }
 .features article:hover .animFeature {
 	transform: translateX(-25px);
