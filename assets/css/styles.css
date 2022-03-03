@@ -55,6 +55,11 @@ nav .logo {
 nav #logoWave {
 	fill: var(--fgColor);
 }
+nav .logo:hover #logoWave {
+	fill: var(--altColor);
+	transform: rotate(360deg);
+	transition: transform 1s;
+}
 nav #logoTitle {
 	font-size: x-large;
 	margin-left: 12px;
