@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
-		<script src="./assets/js/script.js" defer></script>
 		<title>XD to HTML</title>
 		<style>
 			#splash-min {
@@ -52,5 +51,12 @@
 						</div>
 					</header>
 		</section>
+			const navPos = getComputedStyle(document.documentElement).getPropertyValue('--navPos')
+			const navbar = document.querySelector('nav')
+			const logo = document.querySelector('.logo')
+			window.onscroll = () => {
+				window.scrollY > navPos ? navbar.classList.add('navShrink') : navbar.classList.remove('navShrink')
+			}
+			logo.onclick = () => navbar.classList.toggle('mobile')
 	</body>
 </html>
