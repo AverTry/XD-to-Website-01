@@ -50,7 +50,7 @@ nav .logo {
 	display: inline-flex;
 	align-items: center;
 	padding-inline-end: 4rem;
-	cursor: pointer;
+	cursor: default;
 }
 nav #logoWave {
 	fill: var(--fgColor);
@@ -368,9 +368,10 @@ header p {
 		transform: translateY(-45px);
 		align-items: center;
 	}
-	.mobile .logo {
+	nav .logo {
 		padding-inline-end: 0;
 		flex: auto;
+		cursor: pointer;
 	}
 	nav .logo:hover #logoWave {
 	fill: var(--altColor);
