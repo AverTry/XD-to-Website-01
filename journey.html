@@ -51,12 +51,14 @@
 						</div>
 					</header>
 		</section>
-			const navPos = getComputedStyle(document.documentElement).getPropertyValue('--navPos')
-			const navbar = document.querySelector('nav')
-			const logo = document.querySelector('.logo')
-			window.onscroll = () => {
-				window.scrollY > navPos ? navbar.classList.add('navShrink') : navbar.classList.remove('navShrink')
-			}
-			logo.onclick = () => navbar.classList.toggle('mobile')
+			<sript>
+				const navPos = getComputedStyle(document.documentElement).getPropertyValue('--navPos')
+				const navbar = document.querySelector('nav')
+				const logo = document.querySelector('.logo')
+				window.onscroll = () => {
+					window.scrollY > navPos ? navbar.classList.add('navShrink') : navbar.classList.remove('navShrink')
+				}
+				logo.onclick = () => navbar.classList.toggle('mobile')
+			</script>
 	</body>
 </html>
