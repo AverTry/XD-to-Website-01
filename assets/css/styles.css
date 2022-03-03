@@ -108,7 +108,7 @@ nav #journeyLink-1 {
 }
 .container {
 	max-width: var(--siteWidth);
-	min-width: calc(600px - var(--sideMargins));
+/* 	min-width: calc(600px - var(--sideMargins)); */
 	margin: 0 auto;
 	position: relative;
 	padding-inline: var(--sideMargins);
