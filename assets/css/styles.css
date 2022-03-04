@@ -87,7 +87,7 @@ nav .navJourney {
 }
 nav #arrowAnim {
 	position: absolute;
-	top: 8px;
+	top: 3px;
 	left: 20px;
 	stroke: var(--altColor);
 	stroke-width: 2px;
@@ -108,7 +108,7 @@ nav #journeyLink-1 {
 }
 .container {
 	max-width: var(--siteWidth);
-/* 	min-width: calc(600px - var(--sideMargins)); */
+	/* min-width: calc(600px - var(--sideMargins)); */
 	margin: 0 auto;
 	position: relative;
 	padding-inline: var(--sideMargins);
@@ -319,6 +319,9 @@ header p {
 		padding-inline: 4rem;
 		margin-block: 2rem;
 	}
+	.cardContainer {
+		margin-block: 2rem;
+	}
 	.card img {
 		aspect-ratio: 2/1.5;
 	}
@@ -393,10 +396,70 @@ header p {
 	}
 	.cardContainer {
 		flex-direction: column;
-		margin-block: 2rem;
 		gap: 2.5rem;
 	}
 	.card img {
 		aspect-ratio: unset;
+	}
+}
+@media (max-width: 625px) {
+	:root {
+		--navPos: 10;
+		--navHmax: 80;
+		--navHmin: 50;
+		--headingPos: 70;
+		--sideMargins: 25px;
+	}
+	nav .navJourney {
+		font-size: smaller;
+	}
+	.sideBar {
+		display: none;
+	}
+	header h1 {
+		font-size: 2.5em;
+	}
+	header p {
+		font-size: 1.2em;
+		line-height: 1.5;
+	}
+	header .headerArrow::before {
+		width: 24px;
+		height: 95px;
+	}
+	header .headerArrow::after {
+		bottom: -73px;
+		left: 14px;
+	}
+	.journeyAnimContainer {
+		width: 87%;
+		height: 120px;
+		margin-left: 30px;
+		border: white dotted 0;
+	}
+	.journeyAnim h2 {
+		font-size: large;
+	}
+	.features {
+		padding-inline: 0;
+		padding-block: 1rem !important;
+		padding: 0rem;
+		gap: 0.5rem;
+	}
+	.features .animFeature {
+    /* margin-block: 1em; */
+    transform: translateX(-35px);
+	}
+	.features article:hover .animFeature {
+		transform: translateX(-12px);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	header .headerArrow::before {
+		border-left: 2px solid white;
+		border-bottom: 2px solid white;
+	}
+	header .headerArrow::after {
+		border-left-color: white;
 	}
 }
