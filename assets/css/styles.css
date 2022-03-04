@@ -428,8 +428,8 @@ header p {
 		height: 95px;
 	}
 	header .headerArrow::after {
-		bottom: -73px;
-		left: 14px;
+		bottom: -72px;
+		left: 16px;
 	}
 	.journeyAnimContainer {
 		width: 87%;
